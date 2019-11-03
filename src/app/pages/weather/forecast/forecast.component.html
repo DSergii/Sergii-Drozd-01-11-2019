@@ -1,0 +1,36 @@
+<div class="forecast-holder">
+  <div class="header">
+    <div class="location-forecast" *ngIf="defaultLocation">
+      <strong>{{defaultLocation.LocalizedName}}</strong>
+      <span>{{defaultLocation.LocalObservationDateTime | date:'EEE, MMM d, y'}}</span>
+      <span>{{defaultLocation.Temperature.Metric.Value}}<sup>o</sup> {{defaultLocation.Temperature.Metric.Unit}}</span>
+      <span>{{defaultLocation.WeatherText}}</span>
+    </div>
+    <div class="favorite">
+      <ng-container *ngTemplateOutlet="!forecast || (forecast?.id !== favoriteLocation.id) ? add : remove; context: forecast"></ng-container>
+      <ng-template #add>
+        <button type="button" class="btn btn-success" [disabled]="!forecast" (click)="addToFavorite(forecast)">Add to Favorite</button>
+      </ng-template>
+      <ng-template #remove>
+        <button type="button" class="btn btn-danger" (click)="removeFromFavorite(favoriteLocation.id)">Remove from Favorite</button>
+      </ng-template>
+    </div>
+  </div>
+  <ng-container *ngIf="forecast">
+    <h2>{{forecast.Headline.Text}}</h2>
+    <div class="forecast-list">
+      <div class="card" *ngFor="let item of forecast.DailyForecasts">
+        <figure>
+          <img src="../../../../assets/img/icon-{{item.Day.Icon}}.png" class="card-img-top" alt="{{item.Day.IconPhrase}}">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">{{item.Date | date:'EEE, MMM d, y'}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Day {{item.Temperature.Maximum.Value}}<sup>o</sup> {{item.Temperature.Maximum.Unit}} / Night {{item.Temperature.Minimum.Value}}<sup>o</sup> {{item.Temperature.Maximum.Unit}}
+          </h6>
+          <p class="card-text">{{item.Day.IconPhrase}}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

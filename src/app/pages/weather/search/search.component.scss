@@ -1,0 +1,37 @@
+@import "../../../scsslib/index";
+
+.search-holder {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+
+  .input-group-text {
+    @include bg-icon('../../../../assets/img/', 'search', 'png');
+    min-width: 40px;
+    background-size: cover;
+  }
+
+  .search-dropdown {
+    position: absolute;
+    top: 40px;
+    margin: 0;
+    background: #e5f1ff;
+    border: 1px solid #087fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #403d3d;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+
+    li {
+      list-style: none;
+      color: #0f3e6d;
+      margin-bottom: 5px;
+
+      a {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}

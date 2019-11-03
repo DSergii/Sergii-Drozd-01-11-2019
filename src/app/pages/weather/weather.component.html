@@ -1,0 +1,4 @@
+<div class="weather-page">
+  <app-search (dailyForecast)="forecast = $event"></app-search>
+  <app-forecast [forecast]="forecast"></app-forecast>
+</div>

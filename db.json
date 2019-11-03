@@ -1,0 +1,392 @@
+{
+  "favorites": [
+    {
+      "id": "347625",
+      "name": "California",
+      "forecast": {
+        "Headline": {
+          "EffectiveDate": "2019-11-01T07:00:00+00:00",
+          "EffectiveEpochDate": 1572591600,
+          "Severity": 3,
+          "Text": "Expect showery weather Friday morning through Monday evening",
+          "Category": "rain",
+          "EndDate": "2019-11-05T01:00:00+00:00",
+          "EndEpochDate": 1572915600,
+          "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/extended-weather-forecast/328328?unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?unit=c&lang=en-us"
+        },
+        "DailyForecasts": [
+          {
+            "Date": "2019-11-01T07:00:00+00:00",
+            "EpochDate": 1572591600,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.9,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 15.6,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 13,
+              "IconPhrase": "Mostly cloudy w/ showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=1&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=1&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-02T07:00:00+00:00",
+            "EpochDate": 1572678000,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.3,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 18,
+              "IconPhrase": "Rain",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=2&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=2&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-03T07:00:00+00:00",
+            "EpochDate": 1572764400,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.3,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=3&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=3&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-04T07:00:00+00:00",
+            "EpochDate": 1572850800,
+            "Temperature": {
+              "Minimum": {
+                "Value": 7.1,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=4&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=4&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-05T07:00:00+00:00",
+            "EpochDate": 1572937200,
+            "Temperature": {
+              "Minimum": {
+                "Value": 4.6,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 11.4,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 14,
+              "IconPhrase": "Partly sunny w/ showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 35,
+              "IconPhrase": "Partly cloudy",
+              "HasPrecipitation": false
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=5&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=5&unit=c&lang=en-us"
+          }
+        ],
+        "id": "347625",
+        "name": "California"
+      }
+    },
+    {
+      "id": "2580116",
+      "name": "Guangdong",
+      "forecast": {
+        "Headline": {
+          "EffectiveDate": "2019-11-01T07:00:00+00:00",
+          "EffectiveEpochDate": 1572591600,
+          "Severity": 3,
+          "Text": "Expect showery weather Friday morning through Monday evening",
+          "Category": "rain",
+          "EndDate": "2019-11-05T01:00:00+00:00",
+          "EndEpochDate": 1572915600,
+          "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/extended-weather-forecast/328328?unit=c&lang=en-us",
+          "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?unit=c&lang=en-us"
+        },
+        "DailyForecasts": [
+          {
+            "Date": "2019-11-01T07:00:00+00:00",
+            "EpochDate": 1572591600,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.9,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 15.6,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 13,
+              "IconPhrase": "Mostly cloudy w/ showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=1&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=1&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-02T07:00:00+00:00",
+            "EpochDate": 1572678000,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.3,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 18,
+              "IconPhrase": "Rain",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=2&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=2&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-03T07:00:00+00:00",
+            "EpochDate": 1572764400,
+            "Temperature": {
+              "Minimum": {
+                "Value": 8.3,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=3&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=3&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-04T07:00:00+00:00",
+            "EpochDate": 1572850800,
+            "Temperature": {
+              "Minimum": {
+                "Value": 7.1,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 12.2,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 12,
+              "IconPhrase": "Showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Moderate"
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=4&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=4&unit=c&lang=en-us"
+          },
+          {
+            "Date": "2019-11-05T07:00:00+00:00",
+            "EpochDate": 1572937200,
+            "Temperature": {
+              "Minimum": {
+                "Value": 4.6,
+                "Unit": "C",
+                "UnitType": 17
+              },
+              "Maximum": {
+                "Value": 11.4,
+                "Unit": "C",
+                "UnitType": 17
+              }
+            },
+            "Day": {
+              "Icon": 14,
+              "IconPhrase": "Partly sunny w/ showers",
+              "HasPrecipitation": true,
+              "PrecipitationType": "Rain",
+              "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+              "Icon": 35,
+              "IconPhrase": "Partly cloudy",
+              "HasPrecipitation": false
+            },
+            "Sources": [
+              "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=5&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/gb/london/ec4a-2/daily-weather-forecast/328328?day=5&unit=c&lang=en-us"
+          }
+        ],
+        "id": "2580116",
+        "name": "Guangdong"
+      }
+    }
+  ]
+}

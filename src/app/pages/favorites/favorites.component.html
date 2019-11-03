@@ -1,0 +1,17 @@
+<div class="favorites">
+  <ng-container *ngFor="let item of favorites$ | async">
+    <div class="card" (click)="showDailyForecast(item.id)">
+      <figure>
+        <img src="../../../assets/img/icon-{{item.icon}}.png" class="card-img-top" alt="{{item.iconPhase}}">
+      </figure>
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{item.temperature}}<sup>o</sup> {{item.unit}}
+        </h6>
+        <p class="card-text">{{item.precipitationType}}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
+

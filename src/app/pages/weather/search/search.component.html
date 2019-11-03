@@ -1,0 +1,15 @@
+<div class="search-holder">
+  <form>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text"></div>
+      </div>
+      <input type="text" class="form-control" #searchEl (keyup)="search(searchEl.value)" placeholder="Search">
+      <ul class="search-dropdown" *ngIf="result.length">
+        <li *ngFor="let item of result">
+          <a (click)="getDailyForecast(item)">{{item.LocalizedName}}, {{item.AdministrativeArea.LocalizedName}}, {{item.Country.ID}}</a>
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>

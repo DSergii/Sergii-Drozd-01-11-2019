@@ -1,0 +1,3 @@
+@mixin bg-icon($path, $name, $type) {
+  background: url('#{$path}#{$name}.#{$type}');
+}

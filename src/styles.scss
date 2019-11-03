@@ -1,0 +1,29 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #7781fb url(./assets/img/clouds.png) no-repeat 0 0;
+  margin: 0;
+  min-width: 320px;
+}
+a {
+  color: #9ec4ed;
+  &:hover,
+  &.active {
+    color: #087fff;
+  }
+}
+.card {
+  width: 225px;
+  margin: 0 10px 20px;
+  align-self: stretch;
+  text-align: center;
+
+  figure {
+    margin: 15px auto 5px;
+    width: 120px;
+    height: auto;
+  }
+}
