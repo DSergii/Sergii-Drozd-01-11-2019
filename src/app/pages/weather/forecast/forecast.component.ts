@@ -43,30 +43,7 @@ export class ForecastComponent implements OnInit, OnChanges {
      * get forecast for current geo position
      * by default get forecast for Tel Aviv
      */
-    if (navigator.geolocation) {
-      this.commonSrv.getPosition().then((pos: {lat:number, lng: number}) => {
-        let localizedName = '';
-        const latlong = pos.lat + ',' + pos.lng;
-        this.commonSrv.geopositionSearch(latlong)
-          .pipe(
-            switchMap(geodata => {
-              localizedName = geodata.LocalizedName;
-              return this.commonSrv.getCurrentWeather(geodata.Key)
-            })
-          )
-          .subscribe( (response: Array<SingleForecast>) => {
-            this.defaultLocation = {...response[0], ...{LocalizedName: localizedName}};
-          }, error => {
-            this.toastr.error('Some error has occurred');
-          });
-      });
-    } else {
-      this.commonSrv.getCurrentWeather(this.TEL_AVIV_KEY)
-        .subscribe( (response: Array<SingleForecast>) => {
-          this.defaultLocation = {...response[0], ...{LocalizedName: 'Tel Aviv'}};
-        });
-      this.toastr.error('Geolocation is forbidden');
-    }
+    this.getLocation();
 
     const locationKey: number = this.route.snapshot.params.key;
 
@@ -82,13 +59,9 @@ export class ForecastComponent implements OnInit, OnChanges {
           if(currLocation) {
             this.favoriteLocation.id = currLocation['id'];
             this.favoriteLocation.name = currLocation['name'];
-
-            this.commonSrv.dailyForecast(currLocation['id'])
-              .subscribe( (response: Forecast) => {
-                this.forecast = {...response, ...{id: currLocation['id'], name: currLocation['name']}};
-              }, error => {
-                this.toastr.error('Some error has occurred');
-              });
+            this.getDailyForecast(this.favoriteLocation);
+          } else {
+            this.getDailyForecast({id: locationKey, name: ''});
           }
         });
     }
@@ -101,6 +74,42 @@ export class ForecastComponent implements OnInit, OnChanges {
         this.forecast = changes.forecast.currentValue;
       }
     }
+  }
+
+  getLocation(): void {
+    const success = (position) => {
+      let localizedName = '';
+      const latlong = position.coords.latitude + ',' + position.coords.longitude;
+      this.commonSrv.geopositionSearch(latlong)
+        .pipe(
+          switchMap(geodata => {
+            localizedName = geodata.LocalizedName;
+            return this.commonSrv.getCurrentWeather(geodata.Key)
+          })
+        )
+        .subscribe( (response: Array<SingleForecast>) => {
+          this.defaultLocation = {...response[0], ...{LocalizedName: localizedName}};
+        }, error => {
+          this.toastr.error('Some error has occurred');
+        });
+    };
+    const error = () => {
+      this.commonSrv.getCurrentWeather(this.TEL_AVIV_KEY)
+        .subscribe( (response: Array<SingleForecast>) => {
+          this.defaultLocation = {...response[0], ...{LocalizedName: 'Tel Aviv'}};
+        });
+      this.toastr.error('Geolocation is forbidden');
+    };
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+
+  getDailyForecast(location: {id: string|number, name: string}): void {
+    this.commonSrv.dailyForecast(location['id'])
+      .subscribe( (response: Forecast) => {
+        this.forecast = {...response, ...{id: location['id'], name: location['name']}};
+      }, error => {
+        this.toastr.error('Some error has occurred');
+      });
   }
 
   addToFavorite(location: Forecast): void {

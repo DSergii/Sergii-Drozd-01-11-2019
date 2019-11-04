@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL: 'http://dataservice.accuweather.com',
+  BASE_URL: 'https://dataservice.accuweather.com',
   API_KEY: 'msj5eAKgT4x8ACfyDzIigqSGdrX2KxSm'
 };
 
