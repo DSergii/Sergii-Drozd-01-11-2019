@@ -25,6 +25,7 @@
     "@ngrx/entity": "^8.4.0",
     "@ngrx/store": "^8.4.0",
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "ngx-spinner": "^8.0.3",
     "ngx-toastr": "^10.2.0",
     "rxjs": "~6.4.0",
@@ -53,7 +54,7 @@
     "typescript": "~3.5.3"
   },
   "engines": {
-    "node" : "~10.16.3",
-    "npm" : "~6.11.1"
+    "node": "~10.16.3",
+    "npm": "~6.11.1"
   }
 }
